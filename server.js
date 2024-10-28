@@ -35,7 +35,7 @@ const createAdminUser = async () => {
         }
 
         const newUser = new User({ username, password, role: 'admin' });
-        // await newUser.save();
+        await newUser.save();
         console.log('Usuário criado:', newUser);
     } catch (error) {
         console.error("Erro ao criar usuário admin:", error);
