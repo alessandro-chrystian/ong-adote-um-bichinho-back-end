@@ -5,7 +5,6 @@ import authRoutes from './routes/authRoutes.js';
 import petRoutes from './routes/petRoutes.js';
 import dotenv from 'dotenv';
 import User from './models/User.js';
-import Pet from './models/Pet.js';
 
 dotenv.config();
 
