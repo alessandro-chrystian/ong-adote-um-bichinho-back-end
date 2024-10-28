@@ -30,13 +30,11 @@ const createAdminUser = async () => {
     try {
         const existingUser = await User.findOne({ username });
         if (existingUser) {
-            console.log('Usuário já existe:', existingUser);
             return;
         }
 
         const newUser = new User({ username, password, role: 'admin' });
         await newUser.save();
-        console.log('Usuário criado:', newUser);
     } catch (error) {
         console.error("Erro ao criar usuário admin:", error);
     }
