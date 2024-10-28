@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://ong-adote-um-bichinho-front-end.vercel.app'],
+    origin: ['http://localhost:3000', 'https://ong-adote-um-bichinho-front-3hgd937tm.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
